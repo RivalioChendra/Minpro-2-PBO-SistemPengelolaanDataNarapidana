@@ -209,13 +209,14 @@ Method `getInfo()` pada `Narapidana` **di-override** oleh setiap subclass untuk 
 ```java
 // Superclass
 public String getInfo() {
-    return "ID Narapidana : " + idNapi + "\n" + "Nama          : " + nama + "...";
+        return "ID Narapidana : " + idNapi + "\n"...
 }
 
 // Subclass NarapidanaKorupsi
 @Override
 public String getInfo() {
-    return super.getInfo() + "\n" + "Uang Pengganti: Rp" + uangPengganti + "\n" + "Kategori      : KORUPSI";
+    return super.getInfo() + "\n" + "Uang Pengganti: Rp" + uangPengganti + "\n"
+            + "Kategori      : KORUPSI";
 }
 ```
 
