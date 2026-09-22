@@ -1,51 +1,58 @@
 package com.mycompany.lapas;
 
-import admin.AdminLapas;
+import controller.AdminLapas;
+import model.NarapidanaNarkotika;
+import model.NarapidanaTerorisme;
+import model.NarapidanaKorupsi;
+import model.NarapidanaPembunuhan;
+import model.NarapidanaPencurian;
+import view.NarapidanaView;
 import java.util.Scanner;
-        
 
 public class Main {
     public static void main(String[] args) {
-        
+
         Scanner scanner = new Scanner(System.in);
-        AdminLapas admin = new AdminLapas(scanner);
-        
-        admin.tambahNarapidana("N001", "Galeh Pramudi", "Penipuan", 12, "A1");
-        admin.tambahNarapidana("N002", "Glen Allen", "Pencurian", 8, "A2");
-        
-        admin.tambahSel("A1", "Blok A", 4);
-        admin.tambahSel("A2", "Blok A", 4);
-        admin.tambahSel("A3", "Blok A", 4);
-        
+        NarapidanaView view = new NarapidanaView(scanner);
+        AdminLapas admin = new AdminLapas(view);
+
+        admin.tambahDataAwal(new NarapidanaNarkotika(
+                "N001", "Galeh Pramudi", "Kepemilikan Sabu 5 Gram", 48,
+                "A1", "Blok B", "Rehabilitasi Medis"));
+
+        admin.tambahDataAwal(new NarapidanaTerorisme(
+                "N002", "Rian Saputra", "Percobaan Pengeboman", 180,
+                "C1", "Blok A", "Tinggi"));
+
+        admin.tambahDataAwal(new NarapidanaKorupsi(
+                "N003", "Glen Allen", "Korupsi Dana Desa", 50,
+                "B1", "Blok B", 150000000));
+
+        admin.tambahDataAwal(new NarapidanaPembunuhan(
+                "N004", "Doni Hartono", "Pembunuhan Berencana dalam Sengketa Warisan", 145,
+                "D1", "Blok A", "Berencana"));
+
+        admin.tambahDataAwal(new NarapidanaPencurian(
+                "N005", "Suki", "Pencurian Kendaraan Bermotor", 18,
+                "A2", "Blok C", 15000000));
+
         boolean berjalan = true;
-        
+
         while (berjalan) {
-            System.out.println("\n==========================================");
-            System.out.println("      SISTEM PENGELOLAAN DATA NARAPIDANA");
-            System.out.println("==========================================");
-            System.out.println("1. Tampilkan Narapidana");
-            System.out.println("2. Tampilkan Sel");
-            System.out.println("3. Tambah Narapidana");
-            System.out.println("4. Update Sel Narapidana");
-            System.out.println("5. Hapus Narapidana");
-            System.out.println("6. keluar");
-            System.out.print("Pilih menu (1-6): "); 
-            int pilihan = scanner.nextInt();
-            scanner.nextLine();
-            
+            view.tampilkanMenu();
+            int pilihan = view.bacaAngka("Pilih menu (1-5)");
+            view.tampilkanPesan("");
+
             switch (pilihan) {
                 case 1 -> admin.tampilkanNarapidana();
-                case 2 -> admin.tampilkanSel();
-                case 3 -> admin.tambahNarapidana();
-                case 4 -> admin.updateNomorSel();
-                case 5 -> admin.hapusNarapidana();
-                case 6 -> {
-                    System.out.println("");
-                    System.out.println("Keluar dari program...");
+                case 2 -> admin.tambahNarapidana();
+                case 3 -> admin.updateNomorSel();
+                case 4 -> admin.hapusNarapidana();
+                case 5 -> {
+                    view.tampilkanPesan("\nKeluar dari program...");
                     berjalan = false;
                 }
-                default -> System.out.println("Pilihan tidak valid.");
-                
+                default -> view.tampilkanPesan(">> Pilihan tidak valid.");
             }
         }
         scanner.close();

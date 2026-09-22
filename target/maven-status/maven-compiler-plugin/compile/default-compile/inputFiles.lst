@@ -1,4 +1,9 @@
-C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\Admin\AdminLapas.java
 C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\com\mycompany\lapas\Main.java
+C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\controller\AdminLapas.java
 C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\model\Narapidana.java
-C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\model\Sel.java
+C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\model\NarapidanaKorupsi.java
+C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\model\NarapidanaNarkotika.java
+C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\model\NarapidanaPembunuhan.java
+C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\model\NarapidanaPencurian.java
+C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\model\NarapidanaTerorisme.java
+C:\Users\ASUS\OneDrive\Dokumen\NetBeansProjects\Lapas\src\main\java\view\NarapidanaView.java
