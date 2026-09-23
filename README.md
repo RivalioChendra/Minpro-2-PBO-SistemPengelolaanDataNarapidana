@@ -259,56 +259,56 @@ Hasil dari menu nomor 1: seluruh data narapidana ditampilkan dalam format kartu,
 Setelah memilih menu Tambah, program menanyakan kategori kejahatan terlebih dahulu untuk menentukan subclass mana yang akan dibuat. Proses input data narapidana baru: ID, Nama, Kasus, Masa Tahanan, Nomor Sel, Blok Sel, dan satu atribut tambahan sesuai kategori yang dipilih.
   <br> <br>
 
-**5. Update Nomor Sel**
+**4. Update Nomor Sel**
  
 ![Update Nomor Sel](Asset/menu3.png)
  
 Proses pembaruan nomor sel, program mencari data berdasarkan ID yang dimasukkan, lalu memperbarui nomor selnya.
   <br> <br>
 
-**6. Hapus Narapidana**
+**5. Hapus Narapidana**
  
 ![Hapus Narapidana](Asset/menu4.png)
  
 Proses penghapusan data berdasarkan ID yang dimasukkan.
   <br> <br>
 
-**7. Keluar**
+**6. Keluar**
  
 ![Keluar](Asset/keluar.png)
  
 Pesan penutup yang muncul saat memilih menu Keluar.
   <br> <br>
 
-**8. Validasi Input Kosong**
+**7. Validasi Input Kosong**
  
 ![Validasi Kosong](Asset/validkosong.png)
  
 Pesan error saat kolom seperti ID/Nama/Kasus dibiarkan kosong.
   <br> <br>
 
-**9. Validasi ID Duplikat**
+**8. Validasi ID Duplikat**
  
 ![Validasi Duplikat](Asset/validtambah2.png)
  
 Pesan error saat ID yang dimasukkan sudah digunakan narapidana lain.
   <br> <br>
 
-**10. Validasi Kategori Tidak Valid**
+**9. Validasi Kategori Tidak Valid**
  
 ![Validasi Kategori](Asset/validtambah1.png)
  
 Pesan error saat kategori kejahatan dipilih di luar angka 1–5.
  <br> <br>
 
-**11. Validasi Input Bukan Angka**
+**10. Validasi Input Bukan Angka**
  
 ![Validasi Bukan Angka](Asset/validmenu.png)
  
 Pesan error saat kolom yang seharusnya diisi angka justru diisi huruf/teks.
   <br> <br>
 
-**12. Validasi Angka Harus Positif**
+**11. Validasi Angka Harus Positif**
  
 ![Validasi Positif](Asset/valid0.png)
  
