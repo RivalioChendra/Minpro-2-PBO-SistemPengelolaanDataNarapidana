@@ -237,7 +237,7 @@ Java secara otomatis memanggil `getInfo()` sesuai jenis objek aslinya, jika obje
 ---
 
 ## 🖼️ Dokumentasi Hasil Uji Coba Program   
-### 1. Tampilan Menu Utama     
+## Tampilan Menu Utama     
 **1. Menu Utama**
  
 ![Menu Utama](Asset/menu.png)
