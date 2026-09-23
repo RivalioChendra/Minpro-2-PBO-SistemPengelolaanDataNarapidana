@@ -237,6 +237,81 @@ Java secara otomatis memanggil `getInfo()` sesuai jenis objek aslinya, jika obje
 ---
 
 ## 🖼️ Dokumentasi Hasil Uji Coba Program   
-### 1. Tampilan Menu Utama
+### 1. Tampilan Menu Utama     
+**1. Menu Utama**
+ 
+![Menu Utama](Asset/menu.png)
+ 
+Tampilan awal saat program dijalankan, menampilkan 5 pilihan menu. Lima data awal (satu untuk tiap kategori kejahatan) sudah dimuat secara otomatis.
+ <br> <br>
+
+**2. Tampilkan Narapidana**
+ 
+![Tampilkan Narapidana](Asset/menu1.png)
+ 
+Hasil dari menu nomor 1: seluruh data narapidana ditampilkan dalam format kartu, dengan atribut tambahan yang berbeda sesuai kategorinya masing-masing.
+  <br> <br>
+
+**3. Tambah Narapidana**
+ 
+![Tambah Narapidana](Asset/menu2.png)
+ 
+Setelah memilih menu Tambah, program menanyakan kategori kejahatan terlebih dahulu untuk menentukan subclass mana yang akan dibuat. Proses input data narapidana baru: ID, Nama, Kasus, Masa Tahanan, Nomor Sel, Blok Sel, dan satu atribut tambahan sesuai kategori yang dipilih.
+  <br> <br>
+
+**5. Update Nomor Sel**
+ 
+![Update Nomor Sel](Asset/menu3.png)
+ 
+Proses pembaruan nomor sel, program mencari data berdasarkan ID yang dimasukkan, lalu memperbarui nomor selnya.
+  <br> <br>
+
+**6. Hapus Narapidana**
+ 
+![Hapus Narapidana](Asset/menu4.png)
+ 
+Proses penghapusan data berdasarkan ID yang dimasukkan.
+  <br> <br>
+
+**7. Keluar**
+ 
+![Keluar](Asset/keluar.png)
+ 
+Pesan penutup yang muncul saat memilih menu Keluar.
+  <br> <br>
+
+**8. Validasi Input Kosong**
+ 
+![Validasi Kosong](Asset/validkosong.png)
+ 
+Pesan error saat kolom seperti ID/Nama/Kasus dibiarkan kosong.
+  <br> <br>
+
+**9. Validasi ID Duplikat**
+ 
+![Validasi Duplikat](Asset/validtambah2.png)
+ 
+Pesan error saat ID yang dimasukkan sudah digunakan narapidana lain.
+  <br> <br>
+
+**10. Validasi Kategori Tidak Valid**
+ 
+![Validasi Kategori](Asset/validtambah1.png)
+ 
+Pesan error saat kategori kejahatan dipilih di luar angka 1–5.
+ <br> <br>
+
+**11. Validasi Input Bukan Angka**
+ 
+![Validasi Bukan Angka](Asset/validmenu.png)
+ 
+Pesan error saat kolom yang seharusnya diisi angka justru diisi huruf/teks.
+  <br> <br>
+
+**12. Validasi Angka Harus Positif**
+ 
+![Validasi Positif](Asset/valid0.png)
+ 
+Pesan error saat angka yang dimasukkan bernilai 0 atau negatif.
 
 
