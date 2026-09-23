@@ -82,13 +82,13 @@ Lapas [main]
 | **Main** | Titik awal program, membuat objek, mengisi dummy data, menjalankan menu | `Main.java` |
 
 ```java
-// Model — hanya mengembalikan String, TIDAK mencetak apa pun
+// Model hanya mengembalikan String, TIDAK mencetak apa pun
 public String getInfo() {
     return "ID Narapidana : " + idNapi + "...";
 }
 ```
 ```java
-// View — satu-satunya tempat yang mencetak ke layar
+// View satu-satunya tempat yang mencetak ke layar
 public void tampilkanNarapidana(Narapidana n) {
     System.out.println(n.getInfo());
     System.out.println("------------------------------------------");
@@ -196,7 +196,7 @@ public class NarapidanaKorupsi extends Narapidana {
 }
 ```
 
-Setiap subclass mewarisi seluruh atribut umum dari `Narapidana`, lalu menambahkan satu atribut khusus yang hanya relevan untuk kategori kejahatannya. Ini menghindari pemaksaan atribut yang tidak relevan ke seluruh narapidana — misalnya, "Uang Pengganti" hanya bermakna untuk kasus Korupsi, bukan Pencurian.
+Setiap subclass mewarisi seluruh atribut umum dari `Narapidana`, lalu menambahkan satu atribut khusus yang hanya relevan untuk kategori kejahatannya. Ini menghindari pemaksaan atribut yang tidak relevan ke seluruh narapidana, misalnya, "Uang Pengganti" hanya bermakna untuk kasus Korupsi, bukan Pencurian.
 
 ---   
 
